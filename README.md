@@ -7,7 +7,7 @@ For cases where an online compiler is out of the question.
 
 ## How to
 
-1. Reset the environment
+1. Reset the environment (overwrites previous changes to `main.cpp`):
 ``` bash
 ./reset
 ```
@@ -17,7 +17,7 @@ For cases where an online compiler is out of the question.
 ./run
 ```
 
-3. Edit `main.cpp`. Save to file to trigger a new compile-and-run cycle
+3. Edit `main.cpp`. Save to file to trigger a new compile-and-run cycle.
 
 ## Install
 
