@@ -5,6 +5,9 @@ For cases where an online compiler is out of the question.
 
 ![minicpp](https://i.imgur.com/jQ0s8UF.png)
 
+(the example uses the [`dbg(…)`](https://github.com/sharkdp/dbg-macro/) macro
+which is included in `minicpp`)
+
 ## How to
 
 1. Reset the environment (overwrites previous changes to `main.cpp`):
