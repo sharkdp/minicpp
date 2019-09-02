@@ -1,6 +1,7 @@
 # minicpp
 
-A REPL-style development environment for small C++ snippets
+A REPL-style "development environment" for small C++ snippets.
+For cases where an online compiler is out of the question.
 
 ![minicpp](https://i.imgur.com/jQ0s8UF.png)
 
