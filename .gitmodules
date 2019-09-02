@@ -1,3 +1,6 @@
 [submodule "dbg-macro"]
 	path = dbg-macro
 	url = https://github.com/sharkdp/dbg-macro/
+[submodule "trigger"]
+	path = trigger
+	url = https://github.com/sharkdp/trigger
