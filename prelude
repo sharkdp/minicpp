@@ -1,0 +1,13 @@
+#include <algorithm>
+#include <array>
+#include <cstdint>
+#include <iostream>
+#include <string>
+#include <type_traits>
+#include <vector>
+
+#include <dbg.h>
+
+using namespace std;
+
+/* vim: set ft=cpp: */
