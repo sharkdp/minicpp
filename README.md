@@ -7,19 +7,19 @@ A REPL-style development environment for small C++ snippets
 ## How to
 
 1. Reset the environment
-```
-./reset.sh
+``` bash
+./reset
 ```
 
 2. Start the watcher that recompiles and runs the snippet:
-```
-./run.sh
+``` bash
+./run
 ```
 
-3. Edit `main.cpp`
+3. Edit `main.cpp`. Save to file to trigger a new compile-and-run cycle
 
 ## Install
 
-```
+``` bash
 git clone --recursive https://github.com/sharkdp/minicpp
 ```
