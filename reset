@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cp minicpp/template.cpp main.cpp
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+
+cp "$SCRIPT_DIR"/minicpp/template.cpp "$SCRIPT_DIR"/main.cpp
