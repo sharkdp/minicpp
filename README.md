@@ -3,7 +3,7 @@
 A REPL-style "development environment" for small C++ snippets.
 For cases where an online compiler is out of the question.
 
-![minicpp](https://i.imgur.com/jQ0s8UF.png)
+![minicpp](https://i.imgur.com/nyUedKx.png)
 
 (the example uses the [`dbg(…)`](https://github.com/sharkdp/dbg-macro/) macro
 which is included in `minicpp`)
