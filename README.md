@@ -24,6 +24,11 @@ which is included in `minicpp`)
 
 ## Install
 
+Make sure that `inotifywait` is installed. It should be available
+for most Linux distributions (the package is typically called `inotify-tools`).
+
+Apart from that, you just need to clone the repository (recursively):
+
 ``` bash
 git clone --recursive https://github.com/sharkdp/minicpp
 ```
