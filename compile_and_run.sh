@@ -3,7 +3,11 @@
 CXX_STANDARD="c++17"
 OPTIMIZATION_LEVEL="2"
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+
 set -e
+
+cd "$SCRIPT_DIR"
 
 g++ \
     --std="$CXX_STANDARD" \

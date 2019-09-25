@@ -1,3 +1,20 @@
 #!/bin/bash
 
-trigger/trigger ./compile_and_run.sh main.cpp compile_and_run.sh minicpp/prelude
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+
+cd "$SCRIPT_DIR"
+
+if [[ ! -e trigger/trigger ]]; then
+    git submodule update --init
+fi
+
+if [[ ! -e main.cpp ]]; then
+    ./reset
+fi
+
+trigger/trigger ./compile_and_run.sh \
+    main.cpp \
+    compile_and_run.sh \
+    minicpp/prelude
