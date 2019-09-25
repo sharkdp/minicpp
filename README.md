@@ -15,7 +15,7 @@ which is included in `minicpp`)
 ./run
 ```
 
-2. Edit `main.cpp`. Save to file to trigger a new compile-and-run cycle.
+2. Edit `main.cpp`. Save the file to trigger a new compile-and-run cycle.
 
 ## Restart
 
