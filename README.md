@@ -10,17 +10,20 @@ which is included in `minicpp`)
 
 ## How to
 
-1. Reset the environment (overwrites previous changes to `main.cpp`):
-``` bash
-./reset
-```
-
-2. Start the watcher that recompiles and runs the snippet:
+1. Start the watcher that recompiles and runs the snippet:
 ``` bash
 ./run
 ```
 
-3. Edit `main.cpp`. Save to file to trigger a new compile-and-run cycle.
+2. Edit `main.cpp`. Save to file to trigger a new compile-and-run cycle.
+
+## Restart
+
+If you want to start from scratch, you can call
+``` bash
+./reset
+```
+Note that this overwrites your previous changes to `main.cpp`!
 
 ## Install
 
