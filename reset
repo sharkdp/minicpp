@@ -2,4 +2,17 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 
-cp "$SCRIPT_DIR"/minicpp/template.cpp "$SCRIPT_DIR"/main.cpp
+set -e
+
+cd "$SCRIPT_DIR"
+
+# Backup old main.cpp
+if [[ -e main.cpp ]]; then
+    timestamp=$(date +"%s")
+    backup="/tmp/minicpp-main-${timestamp}.cpp"
+
+    cp main.cpp "$backup"
+    echo "A backup of the existing 'main.cpp' has been created at '$backup'."
+fi
+
+cp minicpp/template.cpp main.cpp

@@ -23,7 +23,6 @@ If you want to start from scratch, you can call
 ``` bash
 ./reset
 ```
-Note that this overwrites your previous changes to `main.cpp`!
 
 ## Install
 
