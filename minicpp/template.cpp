@@ -5,3 +5,14 @@ int main() {
 
   dbg(x);
 }
+
+// COMPILE OPTIONS
+//
+//# --std=c++14
+//# -g
+//# -O2
+//# -Wall
+//# -Wextra
+//# -pedantic
+//# -fsanitize=address
+//# -fsanitize=signed-integer-overflow

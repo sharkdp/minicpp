@@ -1,23 +1,15 @@
 #!/bin/bash
 
-CXX_STANDARD="c++14"
-OPTIMIZATION_LEVEL="2"
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 
 set -e
 
 cd "$SCRIPT_DIR"
 
+COMPILE_OPTIONS=($(sed -n -e 's@^//# @@p' main.cpp))
+
 g++ \
-    --std="$CXX_STANDARD" \
-    -Wall \
-    -Wextra \
-    -pedantic \
-    -fsanitize="address" \
-    -fsanitize="signed-integer-overflow" \
-    -g \
-    -O"$OPTIMIZATION_LEVEL" \
+    "${COMPILE_OPTIONS[@]}" \
     -I"dbg-macro" \
     -DDBG_MACRO_NO_WARNING=1 \
     -o /tmp/minicpp_main \
