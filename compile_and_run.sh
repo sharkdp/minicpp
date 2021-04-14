@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CXX_STANDARD="c++17"
+CXX_STANDARD="c++14"
 OPTIMIZATION_LEVEL="2"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
