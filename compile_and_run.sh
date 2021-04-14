@@ -19,6 +19,7 @@ g++ \
     -g \
     -O"$OPTIMIZATION_LEVEL" \
     -I"dbg-macro" \
+    -I"$SCRIPT_DIR/minicpp" \
     -DDBG_MACRO_NO_WARNING=1 \
     -o /tmp/minicpp_main \
     main.cpp
