@@ -8,7 +8,7 @@ int main() {
 
 // COMPILE OPTIONS
 //
-//# --std=c++14
+//# --std=c++17
 //# -g
 //# -O2
 //# -Wall
